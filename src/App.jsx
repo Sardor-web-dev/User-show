@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import {USERS} from './utils/users.js'
-
+import { USERS } from './utils/users'
 
 function App() {
   const [selUser, setUser] = useState(null) 
@@ -39,8 +38,15 @@ function App() {
       <br />
 
       <div className='container'>
+        <User/>
 
-        {
+      </div>
+    </div>
+  )
+  function User() {
+    return (
+        <>
+                {
           USERS.map((user, idx) => (
             <div
               key={user.id}
@@ -54,10 +60,10 @@ function App() {
             </div>
           ))
         }
+        </>
+    );
+}
 
-      </div>
-    </div>
-  )
 }
 
 
