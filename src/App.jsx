@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       {
-        selUser ? 
+        selUser ? (
         <div className='modal'>
           <div className="modal-content">
           <center>
@@ -27,6 +27,7 @@ function App() {
       </center>
           </div>
         </div>
+        )
       : (
         <center>
                   <h1>No user selected, Please click on user</h1>
