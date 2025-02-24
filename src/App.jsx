@@ -45,12 +45,12 @@ function App() {
   )
 
   
-  
+
   function User() {
     return (
         <>
                 {
-          USERS.map((user, idx) => (
+          USERS.map((user) => (
             <div
               key={user.id}
               className="profile-container"
